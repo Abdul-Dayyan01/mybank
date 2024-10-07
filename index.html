@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App - Money Transfer</title>
+    <link rel="stylesheet" href="Style.css">
+   
+</head>
+<body>
+    <header>
+        <h1 ><b>Hi there,Welcome to your Bank App</b></h1>
+      
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#transfer">TRANSFER</a></li>
+                <li><a href="#history">TRANSACTION HISTORY</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact"> CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <section id="home">
+            <h2 style="text-align: center;"><b>Welcome to My Bank</b></h2>
+            <p style="text-align: center;"><b>Your reliable partner in banking,Innovative solutions for your evolving needs.</b></p>
+        </section>
+
+        <section id="transfer">
+            <br>
+            
+            <h2 style="text-align: center;"><b>Transfer Money</b></h2>
+            <form id="transferForm">
+                <label for="fromAccount">From Account:</label>
+                <input type="text" id="fromAccount" required>
+
+                <label for="toAccount">To Account:</label>
+                <input type="text" id="toAccount" required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+
+                <button type="submit " style="text-align: center;">Transfer</button>
+            </form>
+            <p id="message"></p>
+        </section>
+        <section id="history">
+            <h2  style="text-align: center;"><b>Transaction History</b></h2>
+            <table id="historyTable">
+                <thead>
+                    <tr>
+                        <th>From Account</th>
+                        <th>To Account</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Transaction history will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="about">
+            <h2 style="text-align: center;">About Us</h2>
+            <p style="text-align: center;"><b>We offer the best banking services with top-notch security and customer support.As a trusted partner,understanding your business goals inside and out enables us to provide counsel and well-designed solutions for your unique needs.</b></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@mybank.com</p>
+            <p>Phone: 09079514125</p>
+        </section>
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
